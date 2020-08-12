@@ -1,4 +1,4 @@
-## Instagram
+## InstagramClone
 A clone of the Instagram app.
 
 ## Requirements
