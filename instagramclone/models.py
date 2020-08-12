@@ -9,7 +9,7 @@ from PIL import Image
 
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='media/')
+    image = models.ImageField(upload_to='posts')
     caption = models.CharField(max_length=255)
     likes = models.IntegerField(default=0)
 
