@@ -119,6 +119,7 @@ def register(request):
         else:
             form = UserCreationForm()
         return render(request, 'registration/registration.html', {form:form})
+
 def unfollow(request, to_unfollow):
     if request.method == 'GET':
         user_profile2 = Profile.objects.get(pk=to_unfollow)
